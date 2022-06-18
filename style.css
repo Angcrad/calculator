@@ -12,7 +12,7 @@
     grid-template-rows: minmax(100px, auto) repeat(5, 80px);
     gap: 2px;
 }
-#zero
+.zero
 {
 	grid-column: span 2;
 }
@@ -21,14 +21,7 @@
 	grid-column: 1 / -1;
 	background-color: #b2b9b7;
 	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	align-items: flex-end;
-	padding: 5px;
-	font-size: 5.5em;
-	font-weight: initial;
-	text-shadow: 1.3px 1.3px #383838;
-	margin: 5px;
+	flex-direction: column;
 }
 #calc
 {
@@ -40,4 +33,34 @@
 	height: 100vh;
 	overflow: hidden;
 	background-color: azure;
+}
+.row
+{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+.column
+{
+	display: flex;
+	flex-direction: row;
+	flex: 1;
+	justify-content: right;
+}
+.number,.decimal
+{
+	background-color: #0f775a;
+}
+
+.operator,.equals
+{
+	background-color: #0ccfc6;
+}
+.sign,.backspace
+{
+	background-color: #6241d6;
+}
+.clear
+{
+	background-color: red;
 }
