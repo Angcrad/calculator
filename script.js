@@ -1,7 +1,6 @@
 let dispStr="";
 let firstValSet=false;
 let secondValSet=false;
-let operandSet=false;
 let delFlag=false;
 let firstVal=0.0;
 let secondVal=0.0;
@@ -180,7 +179,6 @@ function getButtonValueKB(str)
 		case "clear":
 			firstValSet=false;
 			secondValSet=false;
-			operandSet=false;
 			firstVal=0;
 			secondVal=0;
 			operand="";
@@ -319,10 +317,6 @@ function getButtonValueKB(str)
 			}
 			break;
 	}
-}
-function float2str(val)
-{
-	return ""+val;
 }
 function processValue(str)
 {
